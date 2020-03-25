@@ -96,8 +96,6 @@ class SeeMoreWidget extends Widget
         $moreBtnId = $this->getId() . '-more-btn';
         $lessBtnId = $this->getId() . '-less-btn';
         $containerId = $this->getId() . '-container';
-        $lessBtnLabel = Yii::t($this->_msgCategory, $this->showLessLabel);
-        $moreBtnLabel = Yii::t($this->_msgCategory, $this->showMoreLabel);
 
         if (!$this->opened) {
             $this->defaultContainerOptions['style']['max-height'] = $this->containerHeight . 'px';
@@ -112,7 +110,7 @@ class SeeMoreWidget extends Widget
                 $this->defaultContainerOptions)
         );
 
-        echo Html::a($moreBtnLabel, '', ArrayHelper::merge($this->btnOptions, [
+        echo Html::a($this->showMoreLabel, '', ArrayHelper::merge($this->btnOptions, [
             'style' => [
                 'display' => 'none',
             ],
@@ -123,7 +121,7 @@ class SeeMoreWidget extends Widget
                 return false; 
             ")
         ]));
-        echo Html::a($lessBtnLabel, '#', ArrayHelper::merge($this->btnOptions, [
+        echo Html::a($this->showLessLabel, '#', ArrayHelper::merge($this->btnOptions, [
             'style' => [
                 'display' => 'none',
             ],
