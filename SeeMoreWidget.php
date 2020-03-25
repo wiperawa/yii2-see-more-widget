@@ -1,6 +1,6 @@
 <?php
 
-namespace common\widgets;
+namespace wiperawa\seemore;
 
 use Yii;
 use yii\base\Widget;

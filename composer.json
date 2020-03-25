@@ -1,0 +1,24 @@
+{
+	"name": "wiperawa/yii2-see-more-widget",
+	"description": "widget that cut off html content to predefined height, and display ...see more link",
+	"keywords": ["yii2", "extension", "widget", "see more", "show more", "cut off html"],
+	"type": "yii2-extension",
+	"license": "MIT",
+	"support": {
+		"issues": "https://github.com/wiperawa/yii2-see-more-widget/issues",
+		"wiki": "https://github.com/wiperawa/yii2-see-more-widget/wiki/",
+		"source": "https://github.com/wiperawa/yii2-see-more-widget"
+	},
+	"authors": [
+		{
+			"name": "Dmitriy Lukeryanov",
+			"email": "wiperawa@gmail.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*"
+	},
+	"autoload": {
+		"psr-4": { "wiperawa\\seemore\\": "" }
+	}
+}

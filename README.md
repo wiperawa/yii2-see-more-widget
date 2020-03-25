@@ -20,7 +20,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Usage
 ```
-use \wiperawa\seemorewidget\SeeMoreWidget;
+use \wiperawa\seemore\SeeMoreWidget;
 
 SeeMoreWidget::begin([
     'height' => 160 //height of cutoff container in pixels
